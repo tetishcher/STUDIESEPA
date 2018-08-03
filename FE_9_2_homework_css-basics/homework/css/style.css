@@ -1,0 +1,107 @@
+/* 
+write your code here
+*/
+
+.tm-section-title-box:hover {
+    color: white;
+    background-color: #00B0DA;
+}
+
+p:not(.tm-banner-text) {
+    text-indent: 15px;
+}
+
+p:first-letter {
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+.tm-content-box,
+.tm-sidebar {
+    box-shadow: 0 0 7px 5px grey;
+}
+
+.heading tm-content-box a:visited {
+    color: silver;
+}
+
+
+.img-fluid thumbnail {
+    border-radius: 100px;
+}
+
+
+.form-control {
+    color: red;
+}
+
+.submit-btn {
+    color: red;
+}
+
+.submit-btn:hover {
+    color: white;
+    background-color: #00B0DA;
+}
+
+.mandatory-field:after {
+    content: "*";
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 7px
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    border: 25px solid transparent;
+    border-left: 100px solid #00B0DA;
+    border-top: 0px solid #00B0DA;
+}
+
+h2+p:first-of-type {
+    font-style: italic;
+}
+
+.tm-nav-item:nth-child(-n+3) {
+    border-bottom-style: dotted;
+    color: silver;
+}
+
+.thumbnail {
+    border-radius: 50%;
+}
+
+.active .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+.pad a:visited {
+    color: silver;
+}
+
+.pad a:hover {
+    text-decoration: double underline;
+    color: #00B0DA
+}
+
+.pad .text::after {
+    content: "New";
+    color: red;
+    position: absolute;
+    font-size: 50%;
+}
+
+.blocks .gallery-container .box:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+.gallery-container p {
+    color: grey;
+}
+
+.gallery-container p:first-letter {
+    color: grey;
+}
