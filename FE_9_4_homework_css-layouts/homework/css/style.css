@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
 
 body {
 	max-width: 960px;
@@ -11,12 +11,12 @@ body {
 
 header {
 	background: url("../img/apples.jpg") center center no-repeat;
+	background-position: top;
 	height: 740px;
 }
 
 .header_inner {
-	padding-top: 36px;
-	margin: 0px 30px;
+	padding: 30px;
 }
 
 .logo_link navbar-brand {
@@ -31,11 +31,16 @@ header {
 	color: #fff;
 }
 
+.slogan_section h1 span {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
 .homebutton {
 	color: #fff;
 	border: 2px solid rgb(255, 255, 255);
-	padding: 10px 15px;
-	margin: 140px 350px;
+	padding: 12px 12px;
+	margin: 140px 360px;
 	text-align: center;
 	background-color: rgba(52, 54, 56, .7);
 	text-decoration: none;
@@ -43,13 +48,16 @@ header {
 
 h1 {
 	color: rgb(255, 255, 255);
-	margin-top: 250px;
+	margin-top: 200px;
 	text-align: center;
 	font-size: 50px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: normal;
 }
 
 h2 {
-	color: rgb(158, 158, 158);
 	text-align: center;
 	padding-top: 90px;
 	padding-bottom: 40px;
@@ -61,6 +69,7 @@ h2 {
 h4 {
 	color: rgb(255, 255, 255);
 	text-align: center;
+	font-weight: normal;
 }
 
 h5 {
@@ -73,12 +82,11 @@ h5 {
 h6 {
 	font-size: 15px;
 	font-weight: normal;
-	color: rgb(158, 158, 158);
-	text-align: center;
-    margin: 10px;
-    padding: 0 50px;
+	color: rgb(255, 255, 255);
+	text-align: left;
+    margin: 5px;
+    padding: 0 5px;
     display: inline-block;
-	
 }
 
 figcaption {
@@ -94,55 +102,79 @@ figcaption {
 .post-list {
 	padding: 5px;
 	background: rgb(243, 243, 243);
-
 }
 
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	color: rgb(158, 158, 158);
-	padding: 0px 2px;
-    align-items: center;
-    overflow: hidden;
-    justify-content:center;
+.articles section {
+    height: 300px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
-section {
-	margin-bottom: 5px;
-	width: 45%;
-
-}
-
-.image {
-    position: relative;
-    width: 110%;
-    justify-content: center;
+.articles section .title {
     background-size: cover;
-    overflow: hidden;
-    align-items:center;
+    flex: 2;
+    display: flex;
 }
 
-.image .hearts {
-    position: absolute;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: rgba(52, 54, 56, .5);
-    color: rgb(255, 255, 255);
-    top: 5%;
-    right: 2.5%;
-    padding: .75% 1.5%;
+.gradient {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+}
+
+.likes {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.likes button {
+    border: 2px solid white;
+    color: white;
     font-size: 12px;
-    z-index: 1;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(66, 64, 64, 0.7);
 }
 
-.image::after {
-    background: linear-gradient(to top left, rgba(0, 0, 0, .4), rgba(0, 0, 0, .1));
-    content: "";
-    display: block;
-    height: 99%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 110%;
+.likes button:hover {
+    background:rgba(66, 64, 64, 1);
+    cursor: pointer;
+}
+
+.articles section:nth-child(odd) .title {
+    background-image: url(../img/sample.jpg);  
+}
+
+.articles section:nth-child(even) .title {
+    background-image: url(../img/sample3.jpg);
+}
+
+.articles section .article-text {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    font-size: 0.8em;
+    justify-content: center;
+    flex-direction: column;
+    color: #343638;
+}
+
+.articles section:nth-child(odd) .article-text {
+    padding-left: 15px;
+}
+
+.articles section:nth-child(even) .article-text {
+    padding-right: 15px;
+}
+
+.articles section:nth-child(odd) {
+    flex-direction: row;
+}
+
+.articles section:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .subscribe {
@@ -154,6 +186,7 @@ section {
 p {
 	color: rgb(158, 158, 158);
 }
+
 #contact_email {
 	margin-left: 10px;
 	width: 520px;
@@ -197,7 +230,7 @@ p {
 
 article {
 	width: 24%;
-	padding: 0px;
+	padding: 2px;
 }
 
 .footer_inner {
@@ -207,8 +240,7 @@ article {
 	background-color: rgb(255, 255, 255);
 }
 
-
-span {
+.footer_inner span {
 	float: left;
 	color: rgb(158, 158, 158);
 	padding: 5px;
@@ -236,7 +268,6 @@ a:hover {
 	display: flex;
 	padding: 80px 20px;
 	flex-direction: row;
-	color:rgb(158, 158, 158);
 	justify-content:space-between;
 }
 
