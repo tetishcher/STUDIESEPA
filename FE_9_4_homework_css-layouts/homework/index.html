@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layouts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Your code goes here -->
+    <header>
+        <div class="header_inner">
+            <a class="logo_link navbar-brand" href="#home">BLACK &amp; WHITE</a>
+            <div class="navbar-header">
+                <a role="button" href="#home" target="_self">Home</a>
+                <a role="button" href="#about" target="_self">About</a>
+                <a role="button" href="#vacancies" target="_self">Vacancies</a>
+                <a role="button" href="#shop" target="_self">Shop</a>
+            </div>
+        </div>
+        <div class="slogan_section">
+            <h1>
+                BLACK &amp; WHITE
+            </h1>
+            <h4>
+                An Original Brand Since 1965
+            </h4>
+            <div class="homebutton">
+                <a role="button" href="#show" target="_self">Show More</a>
+            </div>
+        </div>
+    </header>
+    <div class="hometext">
+        <div class="lefttext">
+            <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="righttext">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        </div>
+    </div>
+    <div class="post-list" id="list">
+        <h2>
+            Read some of our <b>featured articles</b>
+        </h2>
+        <div class="container">
+            <section>
+                <figure class="image">
+                    <img src="img/sample.jpg" alt="Some picture" class="photo-item right">
+                    <div class="hearts">172 &#9829;</div>
+                    <figcaption>January’15 South France </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h6>
+            </section>
+            <section>
+                <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h6>
+            </section>
+            <section>
+                <figure class="image">
+                    <img src="img/sample3.jpg" alt="Some picture">
+                    <div class="hearts">172 &#9829;</div>
+                    <figcaption>January’15 South America
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <figure class="image">
+                    <img src="img/sample.jpg" alt="Some picture" class="photo-item">
+                    <div class="hearts">20 &#9829;</div>
+                    <figcaption>January’15 South France
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h6>
+            </section>
+            <section>
+                <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h6>
+            </section>
+            <section>
+                <figure class="image">
+                    <img src="img/sample3.jpg" alt="Some picture">
+                    <div class="hearts">150 &#9829;</div>
+                    <figcaption>January’15 South America
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+        <div class="subscribe">
+            <h5>Subscribe to our <b>newsletter</b></h5>
+            <form action="#contact" method="get" class="contact-form">
+                <input type="email" id="contact_email" name="contact_email" placeholder="Enter your e-mail address" required/>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="more-information">
+        <article>
+            <h3>Black & White</h3>
+            <div>
+                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+            </div>
+        </article>
+        <article>
+            <h3>Last Tweet</h3>
+            <div>
+                <p><i>...sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</i></p>
+            </div>
+            <p class="time">3 hours ago</p>
+        </article>
+        <article>
+            <h3>Contact</h3>
+            <div>
+                <p>www.loremipsumdolar.nl<br>182 AB Your Street Name <br> e-mail@loremipsum.com<br>+1(121)012345679</p>
+            </div>
+        </article>
+        <article class="news">
+            <h3>Newsletter</h3>
+            <div>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
+            </div>
+            <form action="#contact" method="get" class="contact-form">
+                <input type="email" id="form_inner" name="contact_email" placeholder="Enter your e-mail address" required/>
+                <button type="submit" class="subscribe-btn" id="innerbtn">Subscribe</button>
+            </form>
+        </article>
+    </div>
+    <footer>
+        <div class="footer_inner">
+            <span>&#169; 2015 Ruben Stom</span>
+            <nav class="menu-bottom">
+                <a role="button" href="#home" target="_self">Home</a>
+                <a role="button" href="#about" target="_self">About</a>
+                <a role="button" href="#shop" target="_self">Shop</a>
+                <a role="button" href="#vacancies" target="_self">Vacancies</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

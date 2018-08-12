@@ -1,0 +1,257 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	max-width: 960px;
+	min-width: 900px;
+	margin: 0 auto;
+	background: rgb(232, 232, 232);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+header {
+	background: url("../img/apples.jpg") center center no-repeat;
+	height: 740px;
+}
+
+.header_inner {
+	padding-top: 36px;
+	margin: 0px 30px;
+}
+
+.logo_link navbar-brand {
+	float: left;
+}
+
+.navbar-header {
+	float: right;
+}
+
+.slogan_section {
+	color: #fff;
+}
+
+.homebutton {
+	color: #fff;
+	border: 2px solid rgb(255, 255, 255);
+	padding: 10px 15px;
+	margin: 140px 350px;
+	text-align: center;
+	background-color: rgba(52, 54, 56, .7);
+	text-decoration: none;
+}
+
+h1 {
+	color: rgb(255, 255, 255);
+	margin-top: 250px;
+	text-align: center;
+	font-size: 50px;
+}
+
+h2 {
+	color: rgb(158, 158, 158);
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 40px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+
+h4 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+h5 {
+	display: inline;
+    font-weight: normal;
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 15px;
+	font-weight: normal;
+	color: rgb(158, 158, 158);
+	text-align: center;
+    margin: 10px;
+    padding: 0 50px;
+    display: inline-block;
+	
+}
+
+figcaption {
+    position: absolute;
+    font-size: 12px;
+    font-weight: normal;
+    bottom: 3.5%;
+    left: 2.5%;
+    z-index: 1;
+    color: #fff;
+}
+
+.post-list {
+	padding: 5px;
+	background: rgb(243, 243, 243);
+
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	color: rgb(158, 158, 158);
+	padding: 0px 2px;
+    align-items: center;
+    overflow: hidden;
+    justify-content:center;
+}
+
+section {
+	margin-bottom: 5px;
+	width: 45%;
+
+}
+
+.image {
+    position: relative;
+    width: 110%;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden;
+    align-items:center;
+}
+
+.image .hearts {
+    position: absolute;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(52, 54, 56, .5);
+    color: rgb(255, 255, 255);
+    top: 5%;
+    right: 2.5%;
+    padding: .75% 1.5%;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.image::after {
+    background: linear-gradient(to top left, rgba(0, 0, 0, .4), rgba(0, 0, 0, .1));
+    content: "";
+    display: block;
+    height: 99%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110%;
+}
+
+.subscribe {
+	background-color: rgb(255, 255, 255);
+	margin: 15px;
+	padding: 30px 5px;
+}
+
+p {
+	color: rgb(158, 158, 158);
+}
+#contact_email {
+	margin-left: 10px;
+	width: 520px;
+	padding: 10px;
+	background-color: rgb(243, 243, 243);
+	border: 1px solid rgb(52, 54, 56);
+}
+
+.contact-form {
+	display: inline-block;
+
+}
+
+#form_inner {
+	width: 130px;
+	background-color: rgb(243, 243, 243);
+	border: 1px solid rgb(52, 54, 56);
+	padding: 5px;
+	margin: 0px;
+}
+
+.subscribe-btn {
+	border: 1px solid rgb(52, 54, 56);
+	background-color: rgb(52, 54, 56);
+	color: #fff;
+	margin: -5px;
+	padding: 10px;
+}
+
+#innerbtn {
+	padding: 5px;
+}
+
+.more-information {
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	flex-wrap: wrap;
+	padding: 70px 20px;
+	justify-content:flex-start;
+}
+
+article {
+	width: 24%;
+	padding: 0px;
+}
+
+.footer_inner {
+	width: 100%;
+	display: inline-block;
+	border-top: 1px solid rgb(158, 158, 158);
+	background-color: rgb(255, 255, 255);
+}
+
+
+span {
+	float: left;
+	color: rgb(158, 158, 158);
+	padding: 5px;
+}
+
+.menu-bottom a {
+	float: right;
+	color: rgb(158, 158, 158);
+	font-size: 12px;
+	padding: 5px;
+}
+
+a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 0px 15px;
+}
+
+a:hover {
+	color: rgb(183, 200, 217);
+}
+
+.hometext {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	padding: 80px 20px;
+	flex-direction: row;
+	color:rgb(158, 158, 158);
+	justify-content:space-between;
+}
+
+.lefttext, .righttext {
+	width: 45%;
+}
+
+.lefttext {
+	font-size: 16px;
+}
+
+.news {
+	padding-left: 10px;
+}
+
+figure {
+	margin: 0px;
+}
