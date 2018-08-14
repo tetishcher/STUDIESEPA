@@ -1,0 +1,173 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #0a1223;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    color: #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 20px 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 30px;
+    color: #5d5d5d;
+}
+
+nav a:hover {
+    color: #54597d;
+}
+
+nav a:active {
+    color: #54597d;
+}
+
+nav a:first-child {
+    color: #54597d;
+}
+
+.article-title h2 {
+    background: linear-gradient(to right, #DDDDDD 0%, #5d5d5d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2em;
+    color: #ddd;
+    margin-top: 150px;
+}
+
+.article-title p {
+    color: #5d5d5d;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.article-title,
+.image {
+    width: 43%;
+}
+
+img {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+}
+
+.scroll {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 1em;
+
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .article-title,
+    .image {
+        margin: 2%;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    .scroll {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    .article-title h2 {
+        background: linear-gradient(to right, #5d5d5d, #5d5d5d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1em;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        color: #000;
+    }
+
+    nav {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav a {
+        display: block;
+        padding: 5px 0px 5px 5px;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+
+    .article-title p {
+        font-size: 0.8em;
+
+    }
+
+    .container {
+        margin: 2px 10px;
+    }
+
+    .scroll {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #5ebcff;
+        float: left;
+        z-index: +1;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        visibility: visible;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 10px 10px 20px lightgray;
+    }
+}

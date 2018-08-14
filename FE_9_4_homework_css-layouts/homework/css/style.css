@@ -32,8 +32,8 @@ header {
 }
 
 .slogan_section h1 span {
-    font-size: 2em;
-    font-weight: lighter;
+	font-size: 2em;
+	font-weight: lighter;
 }
 
 .homebutton {
@@ -74,7 +74,7 @@ h4 {
 
 h5 {
 	display: inline;
-    font-weight: normal;
+	font-weight: normal;
 	margin-left: 20px;
 	font-size: 16px;
 }
@@ -84,19 +84,19 @@ h6 {
 	font-weight: normal;
 	color: rgb(255, 255, 255);
 	text-align: left;
-    margin: 5px;
-    padding: 0 5px;
-    display: inline-block;
+	margin: 5px;
+	padding: 0 5px;
+	display: inline-block;
 }
 
 figcaption {
-    position: absolute;
-    font-size: 12px;
-    font-weight: normal;
-    bottom: 3.5%;
-    left: 2.5%;
-    z-index: 1;
-    color: #fff;
+	position: absolute;
+	font-size: 12px;
+	font-weight: normal;
+	bottom: 3.5%;
+	left: 2.5%;
+	z-index: 1;
+	color: #fff;
 }
 
 .post-list {
@@ -105,76 +105,76 @@ figcaption {
 }
 
 .articles section {
-    height: 300px;
-    margin-bottom: 20px;
-    display: flex;
+	height: 300px;
+	margin-bottom: 20px;
+	display: flex;
 }
 
 .articles section .title {
-    background-size: cover;
-    flex: 2;
-    display: flex;
+	background-size: cover;
+	flex: 2;
+	display: flex;
 }
 
 .gradient {
-    padding: 20px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+	padding: 20px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
 
 .likes {
-  display: flex;
-  justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .likes button {
-    border: 2px solid white;
-    color: white;
-    font-size: 12px;
-    padding: 5px 10px 5px 10px;
-    background-color: rgba(66, 64, 64, 0.7);
+	border: 2px solid white;
+	color: white;
+	font-size: 12px;
+	padding: 5px 10px 5px 10px;
+	background-color: rgba(66, 64, 64, 0.7);
 }
 
 .likes button:hover {
-    background:rgba(66, 64, 64, 1);
-    cursor: pointer;
+	background: rgba(66, 64, 64, 1);
+	cursor: pointer;
 }
 
 .articles section:nth-child(odd) .title {
-    background-image: url(../img/sample.jpg);  
+	background-image: url(../img/sample.jpg);
 }
 
 .articles section:nth-child(even) .title {
-    background-image: url(../img/sample3.jpg);
+	background-image: url(../img/sample3.jpg);
 }
 
 .articles section .article-text {
-    flex: 1;
-    display: flex;
-    text-align: center;
-    font-size: 0.8em;
-    justify-content: center;
-    flex-direction: column;
-    color: #343638;
+	flex: 1;
+	display: flex;
+	text-align: center;
+	font-size: 1.9em;
+	justify-content: center;
+	flex-direction: column;
+	color: #343638;
 }
 
 .articles section:nth-child(odd) .article-text {
-    padding-left: 15px;
+	padding-left: 15px;
 }
 
 .articles section:nth-child(even) .article-text {
-    padding-right: 15px;
+	padding-right: 15px;
 }
 
 .articles section:nth-child(odd) {
-    flex-direction: row;
+	flex-direction: row;
 }
 
 .articles section:nth-child(even) {
-    flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .subscribe {
@@ -225,7 +225,7 @@ p {
 	background-color: rgb(255, 255, 255);
 	flex-wrap: wrap;
 	padding: 70px 20px;
-	justify-content:flex-start;
+	justify-content: flex-start;
 }
 
 article {
@@ -268,10 +268,11 @@ a:hover {
 	display: flex;
 	padding: 80px 20px;
 	flex-direction: row;
-	justify-content:space-between;
+	justify-content: space-between;
 }
 
-.lefttext, .righttext {
+.lefttext,
+.righttext {
 	width: 45%;
 }
 
